@@ -16,5 +16,8 @@
         フライヤーの画像とかベタベタ貼ったら見栄えするかな。
         </main>
     </div>
+    <div>
+        @include('footer')
+    </div>
 </body>
 </html>

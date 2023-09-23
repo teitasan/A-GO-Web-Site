@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+    color: white;
+}
 header {
     display: flex;
     width: 100%;
@@ -14,7 +18,7 @@ header {
 }
 .header_item {
     display: inline-block;
-    background-color:  #b8b8b8;
+    background-color:  #8d8d8d;
     margin:  5px;
     padding:  10px;
     box-shadow: 0px 2px 3px 0px #000000;

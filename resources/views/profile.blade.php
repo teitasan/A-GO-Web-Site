@@ -15,5 +15,8 @@
         メンバー紹介とか？プロフィールなのかバイオグラフィなのかアバウトなのか。
         </main>
     </div>
+    <div>
+        @include('footer')
+    </div>
 </body>
 </html>
