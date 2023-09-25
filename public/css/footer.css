@@ -1,0 +1,27 @@
+footer {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(81, 81, 81);
+    align-items: center;
+    justify-content: space-between
+}
+.footer_logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+}
+.footer_logo :hover {
+    color:red;
+}
+.footer_menu {
+    margin-right: 20px;
+}
+.footer_item {
+    display:inline-flex;
+    margin:  5px;
+    background: rgb(81, 81, 81);
+}
+.footer_item :hover {
+    background: rgb(130, 130, 130);
+}

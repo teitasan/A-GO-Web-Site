@@ -12,8 +12,11 @@
     </div>
     <div>
         <main>
-        メンバー紹介とか？プロフィールなのかバイオグラフィなのかアバウトなのか。
+        どうかÂgoと発音してください。
         </main>
+    </div>
+    <div>
+        @include('footer')
     </div>
 </body>
 </html>
