@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('/css/footer.css')  }}" >
+<link rel="stylesheet" href="{{ asset('/css/footer.css')}}" >
 <footer class ="footer">
     <div class="footer_logo">
         <a href="{{ route('index') }}" >A-GO</a>

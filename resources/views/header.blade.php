@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('/css/header.css')  }}" >
+<link rel="stylesheet" href="{{ asset('/css/header.css')}}" >
 <header>
     <a href="{{ route('index') }}" class="logo"><img src="{{ asset('/image/A-GO_logo.png')}}"></a>
     <nav>

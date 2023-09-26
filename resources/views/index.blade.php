@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-GOのホームページ</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ asset('/css/slick.css')}}" >
+    <link rel="stylesheet" href="{{ asset('/css/slick_cfg.css')}}" >
 </head>
 <body>
     <div>
@@ -13,14 +15,20 @@
     </div>
     <div>
         <main>
-            
-            ↓馬（メンバー代理）。カルーセルでも作ってみようか。<br>
-            <img src="{{ asset('/image/himg1-2.jpg')}}"><br>
+            <div>
+                <ul class="slider">
+                    <li><img src="{{ asset('/image/himg1-2.jpg')}}"></li>
+                    <li><img src="{{ asset('/image/himg1-2.jpg')}}"></li>
+                    <li><img src="{{ asset('/image/himg1-2.jpg')}}"></li>
+                </ul>
+            </div>
             <a href="https://twitter.com/syuradowa?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @syuradowa</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </main>
     </div>
     <div>
         @include('footer')
     </div>
+    <script src="{{ asset('/js/slick.min.js')}}"></script>
+    <script src="{{ asset('/js/slick_cfg.js')}}"></script>
 </body>
 </html>
