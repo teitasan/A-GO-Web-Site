@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-GOのホームページ</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ asset('/css/index.css')}}" >
     <link rel="stylesheet" href="{{ asset('/css/slick.css')}}" >
     <link rel="stylesheet" href="{{ asset('/css/slick_cfg.css')}}" >
 </head>
@@ -13,17 +14,24 @@
     <div>
         @include('header') 
     </div>
-    <div>
+    <div class ="index_global">
         <main>
             <div>
-                <ul class="slider">
-                    <li><img src="{{ asset('/image/himg1-2.jpg')}}"></li>
-                    <li><img src="{{ asset('/image/himg1-2.jpg')}}"></li>
-                    <li><img src="{{ asset('/image/himg1-2.jpg')}}"></li>
+                <ul class="slider index_slider">
+                    <li class="index_img"><img src="{{ asset('/image/himg1-2.jpg')}}"></li>
+                    <li class="index_img"><img src="{{ asset('/image/himg1-2.jpg')}}"></li>
+                    <li class="index_img"><img src="{{ asset('/image/himg1-2.jpg')}}"></li>
+                </ul>
+                <ul class="thumbnail">
+                    <li class="thumbnail_img"><div><img src="{{ asset('/image/himg1-2.jpg')}}"></div></li>
+                    <li class="thumbnail_img"><div><img src="{{ asset('/image/himg1-2.jpg')}}"></div></li>
+                    <li class="thumbnail_img"><div><img src="{{ asset('/image/himg1-2.jpg')}}"></div></li>
                 </ul>
             </div>
-            <a href="https://twitter.com/syuradowa?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @syuradowa</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </main>
+            <div class ="index_movie">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H85exzh9vo8?si=qAIkzFGGkMKvjtom" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+                </main>
     </div>
     <div>
         @include('footer')
