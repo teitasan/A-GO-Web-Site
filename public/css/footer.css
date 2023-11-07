@@ -1,21 +1,21 @@
 footer {
     background-color: rgb(81, 81, 81);
-    display: flex;
     margin: 0 auto;
-    width: 1000px;
-    height: 60px;
+    width: auto;
+    max-width: 1000px;
+    height: auto;
+    text-align: center;
     align-items: center;
 }
 .footer_logo {
     font-size: 30px;
     font-weight: bold;
-    margin: 20px;
 }
 .footer_logo :hover {
     color:red;
 }
 .footer_menu {
-    margin-right: 50px;
+    
 }
 .footer_item {
     display: inline-flex;
@@ -23,16 +23,21 @@ footer {
     background: rgb(81, 81, 81);
 }
 .footer_item :hover {
-    padding: 3px 3px 3px 3px;
-    background: rgb(130, 130, 130);
+    color: rgb(30, 30, 30);
+}
+.sns_logo {
+    display: flex;
+    justify-content: center;
+}
+.sns_logo a {
+    margin: 10px;
 }
 .twitter_logo {
     display: flex;
     width: 30px;
     height: 30px;
-    margin-left: 200px;
     background-color: black;
-    border-radius: 5px;
+    border-radius: 3px;
     align-items:center;
     justify-content: center;
 }
@@ -44,7 +49,6 @@ footer {
     display: flex;
     width: 40px;
     height: 30px;
-    margin-left: 50px;
     align-items:center;
     justify-content: center;
 }
