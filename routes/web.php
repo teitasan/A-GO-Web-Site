@@ -32,3 +32,14 @@ Route::get('/profile', function () {
 Route::get('/live', function () {
     return view('live'); 
 }) ->name ('live');
+
+Route::get('/liveadd', function () {
+    return view('liveadd'); 
+}) ->name ('liveadd');
+
+Route::post('/liveadd', function () {
+    return view('liveadd'); 
+});
+
+// Route::get('Liveinfoadd', 'App\Http\Controllers\liveController@create') -> name ('Liveinfoadd');
+Route::post('Liveinfoadd','App\Http\Controllers\liveController@store') -> name ('Liveinfoadd');
