@@ -12,7 +12,7 @@
     </div>
     <div>
         <main>
-            <form method="post"  action="{{ url('/liveadd') }}">
+            <form method="post"  action="{{ route('Liveinfoadd') }}">
             @csrf
                 <label>
                     イベント名<input type="text" name="liveTitle">
@@ -42,6 +42,9 @@
             </form>
         </main>
     </div>
+    <?php
+    print_r ($_POST);
+    ?>
     <div>
         @include('footer')
     </div>

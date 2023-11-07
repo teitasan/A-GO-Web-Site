@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\liveController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,5 +41,5 @@ Route::post('/liveadd', function () {
     return view('liveadd'); 
 });
 
-Route::get('/liveadd', 'liveController@post');
-Route::post('/liveadd', 'liveController@create');
+// Route::get('Liveinfoadd', 'App\Http\Controllers\liveController@create') -> name ('Liveinfoadd');
+Route::post('Liveinfoadd','App\Http\Controllers\liveController@store') -> name ('Liveinfoadd');
